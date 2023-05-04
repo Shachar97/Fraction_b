@@ -1,8 +1,8 @@
 /**
- * Demo file for the exercise on binary tree
+ * Demo file for the exercise on Fractions
  *
- * @author Evgeny Hershkovitch Neiterman
- * @since 2023-03
+ * @author Shachar Ketz
+ * @since 2023-05
  */
 
 #include <iostream>
@@ -17,7 +17,7 @@ using namespace ariel;
 
 
 int main() {
-    
+
     cout<<"Slicing a cake!" << endl;
     float friends;
     cout<<"Danny have a birthday party, his mother baked cake" << endl;
