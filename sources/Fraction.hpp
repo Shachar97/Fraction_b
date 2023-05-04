@@ -6,14 +6,15 @@
  * The / operator to divide two fractions and return their quotient as another fraction in reduced form.
  * The == operator to compare two fractions for equality and return true or false.
  * All comparison operations (>,<,>=,<=)
- * The ++ and -- operator that adds (or substracts) 1 to the fraction. implement both pre and post fix.
+ * The ++ and -- operator that adds (or subtracts) 1 to the fraction. implement both pre and post fix.
  * The << operator to print a fraction to an output stream in the format “numerator/denominator”.
  * The >> operator to read a fraction from an input stream by taking two integers as input.
  * All operators should work on both sides on fractions and floats type variables. 
- * on a float var you need use up to 3 digits beyond the desimal point for acuracy.
+ * on a float var you need use up to 3 digits beyond the decimal point for accuracy.
  * 
  * 
  * @author Shachar Ketz 208968362
+ * @since 05.23
 */
 
 
@@ -164,7 +165,7 @@ namespace ariel{
         friend Fraction operator* (const float& left_float,const Fraction& fraction);
 
 
-        /*BOOLEAN comparations*/
+        /*BOOLEAN comparisons*/
         friend bool operator==(const Fraction& fracL, const Fraction& fracR);
         friend bool operator!=(const Fraction& fracL, const Fraction& fracR);
         friend bool operator<(const Fraction& fracL, const Fraction& fracR);

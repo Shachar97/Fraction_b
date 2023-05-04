@@ -605,6 +605,9 @@ bool ariel::operator>=(const Fraction& fracL, const float& right_float){
 
 /*IO*/ 
 std::ostream& ariel::operator<< (std::ostream& output, const Fraction& fraction){
+    if(fraction._numerator==0){
+        return output << 0;
+    }
     return output << fraction._numerator << "/" << fraction._denominator;
 }
 
@@ -639,7 +642,7 @@ std::istream& ariel::operator>>(std::istream& input, Fraction& fraction) { /*hel
             fraction.setDenominator(denom);
         }
     }
-
+    fraction._reduce();
     return input;
 }
 
